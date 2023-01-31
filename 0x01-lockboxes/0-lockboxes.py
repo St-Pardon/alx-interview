@@ -9,7 +9,7 @@ def canUnlockAll(boxes):
     Check boxes for key to unlock the next box
     '''
     if len(boxes[0]) == 0:
-        return(False)
+        return (False)
     keys = {0}
     size = len(boxes)
     visited = {0}
