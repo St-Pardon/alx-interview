@@ -3,6 +3,7 @@
 Locked box challenge
 '''
 
+
 def canUnlockAll(boxes):
     '''
     Check boxes for key to unlock the next box
@@ -17,7 +18,7 @@ def canUnlockAll(boxes):
         for i in keys:
             if i in visited:
                 continue
-            keys= keys.union(boxes[i])
+            keys = keys.union(boxes[i])
             visited.add(i)
         size -= 1
     return len(keys) == len(boxes)
