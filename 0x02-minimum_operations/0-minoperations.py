@@ -6,6 +6,8 @@
 def minOperations(n):
     '''finds no of time opertion is performed
     '''
+    if not isinstance(n, int):
+        return 0
     var = 'H'
     count = 0
     dup = ''
