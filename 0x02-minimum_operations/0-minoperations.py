@@ -6,7 +6,7 @@
 def minOperations(n):
     '''finds no of time opertion is performed
     '''
-    if not isinstance(n, int):
+    if not isinstance(n, int) or n < 0 or n == 1:
         return 0
     var = 'H'
     count = 0
