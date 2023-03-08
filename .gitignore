@@ -132,3 +132,7 @@ dmypy.json
 # test file
 main*.py
 *~
+
+#node
+node_modules
+package*
