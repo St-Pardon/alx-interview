@@ -5,7 +5,9 @@
 from collections import deque
 
 
-def numofneighbour(grid, i, j):
+def numofIsland(grid, i, j):
+    '''Num of islands
+    '''
     count = 0
 
     if (i > 0 and grid[i - 1][j]):
@@ -24,6 +26,8 @@ def numofneighbour(grid, i, j):
 
 
 def island_perimeter(grid):
+    '''perimeter function
+    '''
     C = len(grid[0])
     R = len(grid)
     perimeter = 0
@@ -31,6 +35,6 @@ def island_perimeter(grid):
     for i in range(0, R):
         for j in range(0, C):
             if (grid[i][j]):
-                perimeter += (4 - numofneighbour(grid, i, j))
+                perimeter += (4 - numofIsland(grid, i, j))
 
     return perimeter
